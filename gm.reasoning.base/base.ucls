@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="gr.ntua.softeng.gm.model.comp.Component" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/comp/Component.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2754" y="151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="gr.ntua.softeng.gm.model.impl.DefaultGoalImpl" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/DefaultGoalImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3234" y="453"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="gr.ntua.softeng.gm.reasoning.Value" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/reasoning/Value.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1241" y="7"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="gr.ntua.softeng.gm.model.ext.Condition" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/ext/Condition.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="139" x="1386" y="-41"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="gr.ntua.softeng.gm.model.ext.ConditionalComponent" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/ext/ConditionalComponent.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="65" width="179" x="1565" y="-41"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="gr.ntua.softeng.gm.model.impl.DefaultDecompositionImpl" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/DefaultDecompositionImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2523" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="gr.ntua.softeng.gm.model.rules.Contribution" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/Contribution.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="171" x="2513" y="886"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="gr.ntua.softeng.gm.model.impl.ext.WeightedGoal" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/WeightedGoal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="167" x="3129" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="gr.ntua.softeng.gm.model.GoalModel" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/GoalModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4056" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" name="gr.ntua.softeng.gm.model.impl.DefaultGoalModel" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/DefaultGoalModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3612" y="513"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="11" language="java" name="gr.ntua.softeng.gm.model.rules.DecompositionType" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/DecompositionType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="119" width="164" x="2670" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="12" language="java" name="gr.ntua.softeng.gm.model.rules.ContributionType" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/ContributionType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1909" y="971"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="13" language="java" name="gr.ntua.softeng.gm.model.rules.GoalModelRule" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/GoalModelRule.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2940" y="461"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="14" language="java" name="gr.ntua.softeng.gm.model.impl.ext.WeightedContribution" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/WeightedContribution.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2281" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="gr.ntua.softeng.gm.model.impl.AbstractBinaryRule" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/AbstractBinaryRule.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2002" y="394"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="gr.ntua.softeng.gm.model.impl.AbstractGoalModel" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/AbstractGoalModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="389" width="449" x="3336" y="-41"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="gr.ntua.softeng.gm.model.impl.ext.PrecedenceLink" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/PrecedenceLink.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1668" y="736"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="gr.ntua.softeng.gm.model.impl.ext.PreconditionLink" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/PreconditionLink.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1959" y="738"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="gr.ntua.softeng.gm.model.impl.ext.WeightedNodesGoalModel" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/WeightedNodesGoalModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3499" y="854"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="20" language="java" name="gr.ntua.softeng.gm.model.ext.WeightedComponent" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/ext/WeightedComponent.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2939" y="1099"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="21" language="java" name="gr.ntua.softeng.gm.model.rules.Decomposition" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/Decomposition.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="215" x="2874" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="22" language="java" name="gr.ntua.softeng.gm.model.Goal" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/Goal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3101" y="165"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="23" language="java" name="gr.ntua.softeng.gm.model.fuzzy.FuzzyGoalModel" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/fuzzy/FuzzyGoalModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3903" y="841"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="24" language="java" name="gr.ntua.softeng.gm.model.rules.BinaryRule" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/rules/BinaryRule.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2529" y="739"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="25" language="java" name="gr.ntua.softeng.gm.model.impl.DefaultContributionImpl" 
+    project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/DefaultContributionImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2267" y="736"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="gr.ntua.softeng.gm.model.impl.ext.WeightedNodeData" project="gm.reasoning.base" 
+    file="/gm.reasoning.base/src/main/java/gr/ntua/softeng/gm/model/impl/ext/WeightedNodeData.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2461" y="44"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="27">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="28" name="type">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="32">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="33" name="type">        
+        <position height="0" width="0" x="-96" y="8"/>      
+      </attribute>      
+      <multiplicity id="34" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-96" y="8"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="25"/>  
+  </generalization>  
+  <realization id="36">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="38">    
+    <bendpoint x="3584" y="402"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <realization id="40">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <realization id="44">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="45">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <realization id="48">    
+    <bendpoint x="3138" y="886"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <generalization id="49">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="51">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <association id="52">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="53" name="rules">        
+        <position height="0" width="0" x="-68" y="23"/>      
+      </attribute>      
+      <multiplicity id="54" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-68" y="23"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="55">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="56">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="57" name="goalNodeCatalog">        
+        <position height="0" width="0" x="-296" y="-585"/>      
+      </attribute>      
+      <multiplicity id="58" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-296" y="-585"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="59">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="24"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
