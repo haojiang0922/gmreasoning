@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wtt:WebTaskTemplate xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wtt="platform:/resource/webTaskTemplate/metamodel/wtt.ecore">
+  <refersTo name="task1">
+    <hasDecomposition>
+      <decomposedTo xsi:type="wtt:Task" name="task11" cost="-1">
+        <hasDecomposition>
+          <decomposedTo xsi:type="wtt:Action" name="action11_A">
+            <requires name="resourceA"/>
+          </decomposedTo>
+          <decomposedTo xsi:type="wtt:Task" name="task11_B" cost="-2">
+            <hasDecomposition type="OR">
+              <decomposedTo xsi:type="wtt:Action" name="action11_B1" cost="-5">
+                <requires name="resourceB"/>
+              </decomposedTo>
+              <decomposedTo xsi:type="wtt:Action" name="action11_B2">
+                <requires name="resourceC"/>
+                <requires name="resourceD"/>
+                <requires name="resourceE"/>
+              </decomposedTo>
+            </hasDecomposition>
+          </decomposedTo>
+          <decomposedTo xsi:type="wtt:Action" name="action11_C" cost="-1">
+            <requires name="resourceF"/>
+            <requires name="resourceG"/>
+          </decomposedTo>
+          <decomposedTo xsi:type="wtt:Action" name="action11_D" cost="-4">
+            <requires name="resourceH"/>
+          </decomposedTo>
+        </hasDecomposition>
+      </decomposedTo>
+      <decomposedTo xsi:type="wtt:Task" name="task12">
+        <hasDecomposition type="OR">
+          <decomposedTo xsi:type="wtt:Action" name="action12_A" cost="-6">
+            <requires name="resourceI"/>
+            <requires name="resourceJ"/>
+          </decomposedTo>
+          <decomposedTo xsi:type="wtt:Action" name="action12_B" cost="-2">
+            <requires name="resourceK"/>
+          </decomposedTo>
+        </hasDecomposition>
+      </decomposedTo>
+    </hasDecomposition>
+  </refersTo>
+  <contains xsi:type="wtt:Precedence" from="//@refersTo/@hasDecomposition/@decomposedTo.0/@hasDecomposition/@decomposedTo.2" to="//@refersTo/@hasDecomposition/@decomposedTo.0/@hasDecomposition/@decomposedTo.3"/>
+  <contains xsi:type="wtt:Precedence" from="//@refersTo/@hasDecomposition/@decomposedTo.0/@hasDecomposition/@decomposedTo.3" to="//@refersTo/@hasDecomposition/@decomposedTo.1"/>
+</wtt:WebTaskTemplate>

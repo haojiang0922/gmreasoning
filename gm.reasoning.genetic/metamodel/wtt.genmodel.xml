@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/webTaskTemplate/src" modelPluginID="webTaskTemplate"
+    modelName="Wtt" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false">
+  <foreignModel>wtt.ecore</foreignModel>
+  <genPackages prefix="Wtt" basePackage="gr.ntua.softeng" disposableProviderFactory="true"
+      ecorePackage="wtt.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="wtt.ecore#//DecompositionType">
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//DecompositionType/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//DecompositionType/OR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="wtt.ecore#//ContributionType">
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//ContributionType/PPS"/>
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//ContributionType/MMS"/>
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//ContributionType/PPD"/>
+      <genEnumLiterals ecoreEnumLiteral="wtt.ecore#//ContributionType/MMD"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="wtt.ecore#//TemplateLink"/>
+    <genClasses image="false" ecoreClass="wtt.ecore#//TemplateNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//TemplateNode/cost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//TemplateNode/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wtt.ecore#//CompositeNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wtt.ecore#//CompositeNode/hasDecomposition"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//Task"/>
+    <genClasses ecoreClass="wtt.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wtt.ecore#//Action/requires"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//Resource"/>
+    <genClasses ecoreClass="wtt.ecore#//ResourceDependency">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//ResourceDependency/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//ResourceDependency/to"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//Decomposition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wtt.ecore#//Decomposition/decomposedTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//Decomposition/type"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//Precedence">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//Precedence/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//Precedence/to"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//Contribution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//Contribution/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//Contribution/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wtt.ecore#//Contribution/to"/>
+    </genClasses>
+    <genClasses ecoreClass="wtt.ecore#//WebTaskTemplate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//WebTaskTemplate/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wtt.ecore#//WebTaskTemplate/descr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wtt.ecore#//WebTaskTemplate/refersTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wtt.ecore#//WebTaskTemplate/contains"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

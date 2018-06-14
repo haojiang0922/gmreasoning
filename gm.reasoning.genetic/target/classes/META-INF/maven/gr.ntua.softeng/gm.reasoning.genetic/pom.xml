@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gr.ntua.softeng</groupId>
+	<artifactId>gm.reasoning.genetic</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<opt4j.version>3.1.4</opt4j.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>ecore</artifactId>
+			<version>2.13.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>ecore.xmi</artifactId>
+			<version>2.13.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>common</artifactId>
+			<version>2.13.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/org.eclipse.emf.common_2.13.0.v20170609-0707.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.opt4j</groupId>
+			<artifactId>opt4j-core</artifactId>
+			<version>${opt4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.opt4j</groupId>
+			<artifactId>opt4j-optimizers</artifactId>
+			<version>${opt4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.opt4j</groupId>
+			<artifactId>opt4j-operators</artifactId>
+			<version>${opt4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sat4j</groupId>
+			<artifactId>org.sat4j.core</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sat4j</groupId>
+			<artifactId>org.sat4j.pb</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sat4j</groupId>
+			<artifactId>org.sat4j.sat</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sat4j</groupId>
+			<artifactId>org.sat4j.maxsat</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+	</dependencies>
+</project>

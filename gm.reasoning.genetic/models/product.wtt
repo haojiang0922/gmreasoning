@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wtt:WebTaskTemplate xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wtt="http://wtt/1.0">
+  <refersTo name="PurchaseProduct">
+    <hasDecomposition>
+      <decomposedTo xsi:type="wtt:Task" name="eshopSelection"/>
+      <decomposedTo xsi:type="wtt:Task" name="ProductOrdering">
+        <hasDecomposition>
+          <decomposedTo xsi:type="wtt:Action" name="createOrder"/>
+          <decomposedTo xsi:type="wtt:Action" name="addItem"/>
+          <decomposedTo xsi:type="wtt:Action" name="finalizeOrder"/>
+        </hasDecomposition>
+      </decomposedTo>
+      <decomposedTo xsi:type="wtt:Task" name="Payment"/>
+    </hasDecomposition>
+  </refersTo>
+</wtt:WebTaskTemplate>
