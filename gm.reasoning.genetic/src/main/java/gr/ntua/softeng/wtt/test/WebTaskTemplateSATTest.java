@@ -2,6 +2,7 @@ package gr.ntua.softeng.wtt.test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 
 import gr.ntua.softeng.gtsat.cnf.CNFGeneticMaxSatWrapper;
@@ -24,7 +25,7 @@ public class WebTaskTemplateSATTest {
 		// Load Web Task Template from file
 		WTT2CNFTransformer transformer = new WTT2CNFTransformer(file, new AndOrTreeEvaluatorStrategy());
 		CNFGeneticMaxSatWrapper cnfWrapper = transformer.getCNFWrapper();
-		//System.out.println(cnfWrapper);
+		System.out.println(cnfWrapper);
 		//cnfWrapper.evaluateAssignment(assignment);
 				
 		boolean eval = false;
@@ -66,11 +67,11 @@ public class WebTaskTemplateSATTest {
 						+ "\n\tcost: " + minCost 
 						+ "\n\tassignment: " + Arrays.toString(bestAssignment));
 
-//		System.out.println("\tSolutions: " + solutions.size());
-//		Collections.sort(solutions);
-//		for (String sol : solutions) {
-//			System.out.println("\t"+sol);
-//		}
+		System.out.println("\tSolutions: " + solutions.size());
+		Collections.sort(solutions);
+		for (String sol : solutions) {
+			System.out.println("\t"+sol);
+		}
 	}
 	
 	private static boolean[] testValidAssignment(int cntr) {
