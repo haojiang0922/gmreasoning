@@ -7,6 +7,7 @@ import gr.ntua.softeng.gtsat.goalmodel.rules.PrecedenceLinkRule;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -90,6 +91,16 @@ public class TemporalGoalModelAbstraction extends GoalModelAbstraction {
 		for (String nodeKey : preLinkRules.keySet()) {
 			Set<PrecedenceLinkRule> rules = preLinkRules.get(nodeKey);
 			String cloneKey = cloneNode(nodeKey);
+			if(cloneKey != null) {
+				Iterator<PrecedenceLinkRule> ite = rules.iterator();
+				
+				Set<String> childNodeKeys = new HashSet<String>();
+				while (ite.hasNext()) {
+				childNodeKeys.add(ite.next().getSourceNodeKey());
+				}
+				childNodeKeys.add(cloneKey);
+				addANDDecomposition(nodeKey, childNodeKeys);
+			}
 		}
 		return super.getRules();
 	}
@@ -101,6 +112,8 @@ public class TemporalGoalModelAbstraction extends GoalModelAbstraction {
 		if (this.decompositionRules.containsKey(nodeKey)) {
 			GoalDecompositionRule decompRule = this.decompositionRules.get(nodeKey);
 			decompRule.setParentNodeKey(cloneNodeKey);
+			this.decompositionRules.put(cloneNodeKey, decompRule);
+
 			cloneCreated = true;
 		}
 		// Update contributions
